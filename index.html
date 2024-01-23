@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee House</title>
+    <link rel="stylesheet" href="styles.css">
+    <!--Importing Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <!--Importing Animate on Scroll JavaScript Library-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <header>
+        <!--NavBar-->
+        <nav class="navbar">
+            <img src="Assets/logo.svg" id="logo" alt="logo">
+            <ul class="navlist">
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>    
+        <!--Jumbotron-->    
+        <div class="jumbotron">
+            <h1 id="jumbotron-title">Fauget Coffee House</h1>
+            <p id="jumbotron-slogan">Roasted to Perfection, Served with Passion.</p>
+            <a href="#menu" class="button-container"><button class="button">Menu</button></a>
+        </div>
+    </header>
+
+    <main class="main">
+
+        <div id="hero">
+            <img src="Assets/Coffee-Handle.svg" id="hero-img" alt="coffee machine handle" data-aos="fade-up">
+        </div>
+
+        <section id="about">
+            <div class="about-container container" data-aos="fade-left">
+                <h2 class="title" data-aos="zoom-in">Serving You Coffee Since 1998!</h2>
+                <p id="about-text">Since 1998, our charming coffee house has been a beacon for coffee enthusiasts seeking an unparalleled experience. Rooted in a rich history of passion and dedication to the craft, we have curated a haven where every cup tells a story. Our beans are carefully selected, roasted to perfection, and expertly brewed to offer you a symphony of flavors in every sip. Over the years, we have become more than just a coffee shop; we are a community hub, a space where friendships are forged, and moments are savored. Step into our cozy haven, where the aroma of freshly ground coffee and the warmth of tradition greet you. Celebrate the legacy of exceptional coffee that has defined us since 1998.</p>
+            </div>
+        </section>
+        
+        <section id="menu">
+            <div class="menu-container container" data-aos="fade-right">
+                <!--Menu Title-->
+                <h2 class="title" data-aos="zoom-in">Our Menu!</h2>
+                <!--Menu Items-->
+                <div class="cards-container">
+                    <div class="card">
+                        <h4 class="card-title">Espresso</h4>
+                        <img class="card-img" src="Assets/espresso.svg" alt="">
+                        <p class="price">1.50$</p>
+                    </div>
+                    <div class="card">
+                        <h4 class="card-title">Cappucino</h4>
+                        <img src="Assets/cappucino.svg" alt="">
+                        <p class="price">2.50$</p>
+                    </div>
+                    <div class="card">
+                        <h4 class="card-title">Vanilla Latte</h4>
+                        <img src="Assets/vanilla-latte.svg" alt="">
+                        <p class="price">4.00$</p>
+                    </div>
+                    <div class="card">
+                        <h4 class="card-title">Coffee Latte</h4>
+                        <img src="Assets/coffee-latte.svg" alt="">
+                        <p class="price">3.00$</p>
+                    </div>
+                    <div class="card">
+                        <h4 class="card-title">Caramel Latte</h4>
+                        <img src="Assets/caramel-latte.svg" alt="">
+                        <p class="price">4.50$</p>
+                    </div>
+                    <div class="card">
+                        <h4 class="card-title">Americano</h4>
+                        <img src="Assets/americano.svg" alt="">
+                        <p class="price">3.00$</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="form-container container" data-aos="fade-left">
+                <h2 class="title" data-aos="zoom-in">Contact Us!</h2>
+
+                <form class="contact-form" method="post">
+                    <label for="name">
+                        Name:
+                        <input type="text" id="name" name="name" placeholder="Enter Your Name">
+                    </label>
+                    <label for="email">
+                        Email:
+                        <input type="email" id="email" name="email" placeholder="Enter Your Email">
+                    </label>
+                    <label for="message">
+                        Message:
+                        <textarea type="text" id="message" name="message" placeholder="Your Message Goes Here..."></textarea>
+                    </label>
+                    <button type="submit" class="button">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
+</body>
+</html>
